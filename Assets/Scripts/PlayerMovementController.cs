@@ -54,11 +54,13 @@ public class PlayerMovementController : MonoBehaviour {
 
     public void rotateUp()
     {
+       // vertical camera rotation depriciated.
        // adjustPlayerRotation(1,0);
     }
 
     public void rotateDown ()
     {
+        
       //  adjustPlayerRotation(-1, 0);
     }
 

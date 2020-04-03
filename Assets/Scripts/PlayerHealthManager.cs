@@ -25,7 +25,6 @@ public class PlayerHealthManager : MonoBehaviour
         {
             MusicPlayer.Instance.playDeath();
             dead();
-
         }
         else
         {

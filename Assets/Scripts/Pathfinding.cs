@@ -4,11 +4,10 @@ using UnityEngine;
 
 
 /// <summary>
-/// moves the targetable enemies towords the player at a constant rate.
+/// moves the targetable enemies towards the player at a constant rate.
 /// </summary>
 public class Pathfinding : MonoBehaviour
 {
-
     List<WayPoint> allpoints = new List<WayPoint>();
 
     public float speed = 30;
@@ -60,10 +59,10 @@ public class Pathfinding : MonoBehaviour
         return allpoints[allpoints.Count - 1];
     }
 
+    // check if this entity is close enough to the player
     private void checkDistance()
     {
         WayPoint curPoint = getNextPoint();
-       // Debug.Log(Vector3.Distance(transform.position, curPoint.target));
         if(Vector3.Distance(transform.position, curPoint.target) < 2)
         {
             curPoint.targetReached = true;

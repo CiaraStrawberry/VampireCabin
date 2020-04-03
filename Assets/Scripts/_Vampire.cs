@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// The base class for other associated functions, provides an easy way to call anything on the vampire prefab by only needing a referance to this class.
+/// also handles miscellanious functionality for the vampires.
+/// </summary>
 public class _Vampire : MonoBehaviour
 {
     [SerializeField] private Pathfinding pathComponent;
@@ -60,7 +64,6 @@ public class _Vampire : MonoBehaviour
 
 }
 
-// this breaks unity serialization, :(
   public class WayPoint {
         public Vector3 target;
         public bool targetReached = false;

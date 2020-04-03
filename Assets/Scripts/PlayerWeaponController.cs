@@ -68,12 +68,6 @@ public class PlayerWeaponController : MonoBehaviour
         shotgunBangThing.color = colour;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void switchToShotGun ()
     {
         if (curWeapon == Weapon.shotgun) return;

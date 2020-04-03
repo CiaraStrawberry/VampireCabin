@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 /// <summary>
-/// This class controls how the light swings back and forth, could have used a better function, but given the time contstraints this had to do.
+/// This class controls how the light swings back and forth, could have used a better method with Itween or something, but given the time contstraints this had to do.
 /// </summary>
 public class SwingingFunctionality : MonoBehaviour
 {
